@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project default="pre-build">
+	
+	<target name="pre-build">
+		
+		<mkdir dir=".github/workflows"/>
+		
+		<get src="https://raw.githubusercontent.com/rhjoerg/rhj-settings/master/LICENSE" dest="LICENSE" />
+		<get src="https://raw.githubusercontent.com/rhjoerg/rhj-settings/master/settings.xml" dest="settings.xml" />
+		<get src="https://raw.githubusercontent.com/rhjoerg/rhj-settings/master/build.yml" dest=".github/workflows/build.yml" />
+		
+	</target>
+	
+</project>
