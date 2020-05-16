@@ -57,6 +57,18 @@
 		
 	</distributionManagement>
 	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>ch.rhj</groupId>
+				<artifactId>rhj-java-dependencies</artifactId>
+				<version>0.0.1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
 	<build>
 		<pluginManagement>
 			<plugins>

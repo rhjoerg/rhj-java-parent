@@ -38,7 +38,7 @@
 			<id>github</id>
 			<repositories>
 				<repository>
-					<id>maven</id>
+					<id>github</id>
 					<url>https://maven.pkg.github.com/rhjoerg/maven</url>
 					<releases><enabled>true</enabled></releases>
 					<snapshots><enabled>true</enabled></snapshots>
