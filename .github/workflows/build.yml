@@ -31,15 +31,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
           
-    - name: Settings
-      run: cat settings.xml
-        
-    - name: Package
-      run: mvn package --settings settings.xml
-      env:
-        GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-
-    - name: Deploy
-      run: mvn deploy --settings settings.xml -Dmaven.wagon.http.pool=false -X
+    - name: Build
+      run: mvn clean deploy --settings settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
